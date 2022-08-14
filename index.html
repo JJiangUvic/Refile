@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>ReFile</title>
+</head>
+<body>
+    <h1>ReFile</h1>
+
+    <div style="justify-content: top; display: flex;">
+
+        <div class="left_div">
+            <div id ="main_container" class="div_current_file_names"></div>
+
+            <div>
+                <p class="operationLabel">Path:</p>
+                <input name="dir_path_2" id="dir_path_2"type="text">
+                <p style="display: inline-block;">dir:</p>
+                <input type="checkbox" id="is_dir_include" value="dir">
+                <button onclick="sendPath()">Submit</button>
+            </div>
+            
+            <div>
+                <button id="add_div" onclick="clearDisplay()">clearDisplay</button>
+                <button id="check_value" onclick="checkValue()">DisplayChanges</button>
+                <button id="apply_changes" onclick="applyChanges()">ApplyChanges</button>
+            </div>
+        </div>
+
+        <div id ="operation_secation" class="div_operation_window">
+            <div id = "operation_window" class="operationDisplay"></div>
+
+                <div>
+                    <fieldset class = "operationList">
+                        <p class="operationLabel">Add</p>
+                        <p style="display: inline-block">:</p>
+                        <input type="text" >
+                        <p style="display: inline-block">Front</p>
+                        <input type="radio"  name="drone" style="display: inline-block" checked >
+                        <p style="display: inline-block">End</p>
+                        <input type="radio"  name="drone" style="display: inline-block">
+                        <button onclick="addAdd()">Add to queue</button>
+                    </fieldset>
+
+                    <fieldset class = "operationList">
+                        <p class="operationLabel">ReplaceBy</p>
+                        <p style="display: inline-block">:</p>
+                        <input type="number" class = "slice_input">
+                        <p style="display: inline-block">by</p>
+                        <input type="number" class = "slice_input">
+                        <button onclick="addReplaceBy()">Add to queue</button>
+                    </fieldset>
+
+                    <fieldset class = "operationList">
+                        <p class="operationLabel">Slice </p>
+                        <p style="display: inline-block">:</p>
+                        <input type="number" class = "slice_input">
+                        <p style="display: inline-block">:</p>
+                        <input type="number" class = "slice_input">
+                        <button onclick="addSlice()">Add to queue</button>
+                    </fieldset> 
+
+                    <fieldset class = "operationList">
+                        <p class="operationLabel">Sort</p>
+                        <p style="display: inline-block">:</p>
+                        <p style="display: inline-block">&#8593&#8593</p>
+                        <input type="radio" id="huey2" name="drone3" style="display: inline-block">
+                        <p style="display: inline-block">&#8595&#8595</p>
+                        <input type="radio" id="huey" name="drone3" style="display: inline-block" checked >
+                        <p style="display: inline-block">#</p>
+                        <input type="checkbox" id="huey2" name="drone4" style="display: inline-block">
+                        <button onclick="addSort()">Add to queue</button>
+                    </fieldset>
+                
+                </div>
+        </div>
+            
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+h1{
+    color: rgb(14, 148, 132);
+}
+
+.div_current_file_names{
+    margin: 4px;
+
+    border: 1px solid;
+    border-color: black;
+    border-radius: 10px;
+    /* height: 600px; */
+    
+    padding: 20px;
+    
+    background-color: #f1ecec;
+    height: 500px;
+    overflow:auto;
+
+    /* display: inline-block; */
+
+}
+.left_div{
+    background-color: rgb(116, 116, 104);
+    margin: 4px;
+    border-radius: 10px;
+
+}
+
+.div_operation_window{
+    margin: 4px;
+
+    border: 1px solid;
+    border-color: black;
+    border-radius: 10px;
+    
+    padding: 20px;
+    
+    background-color: rgb(116, 116, 104);
+    display: inline-block;
+
+    width: 600px;
+
+}
+
+.text{
+    color: brown;
+}
+
+.leftChildDiv{
+    display: inline-block;
+    background-color: aqua;
+
+    margin: 4px;
+    padding: 2px;
+
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.rightChildDiv{
+    display: inline-block;
+    background-color:rgb(98, 186, 184);
+
+    margin: 4px;
+    padding: 2px;
+
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.operationList{
+    background-color: rgb(121, 121, 121);
+    border-radius: 3px;
+    
+}
+
+.operationList_{
+    background-color: rgb(234, 118, 118);
+    border-radius: 3px;
+    
+}
+
+/* .addAndRep{
+
+} */
+
+.operationDisplay{
+    height:300px;
+    overflow:auto;
+    background:#f1ecec;
+    border-radius: 3px;
+}
+
+
+
+.slice_input{
+    width: 70px;
+}
+
+.operationLabel{
+    display: inline-block;
+    width: 80px;
+}
